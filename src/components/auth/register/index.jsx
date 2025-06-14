@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Navigate, Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../../contexts/authContext'
 import { doCreateUserWithEmailAndPassword } from '../../../firebase/auth'
+import portal from '/src/assets/portal.jpeg';
 
 const Register = () => {
     const navigate = useNavigate()
@@ -23,10 +24,14 @@ const Register = () => {
 
     return (
         <div>
-            {userLoggedIn && (<Navigate to={'/dashboard'} replace={true} />)}
+            {userLoggedIn && (<Navigate to={'/options'} replace={true} />)}
 
-            <main className="w-full h-screen flex bg-gradient-to-br from-cyan-900 to-black place-content-center place-items-center">
-                <div className="w-96 text-gray-600 space-y-5 p-4 bg-white/10 rounded-xl">
+            <main
+  className="w-full h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: `url(${portal})` }}
+>
+                
+                <div className="w-96 text-gray-600 space-y-5 p-4 bg-black/50 rounded-xl">
                     <div className="text-center">
                         <div className="mt-2">
                             <h3 className="text-white text-xl font-semibold sm:text-2xl">Create a New Account</h3>
@@ -97,6 +102,7 @@ const Register = () => {
                     
                     
                 </div>
+              
             </main>
         </div>
     )

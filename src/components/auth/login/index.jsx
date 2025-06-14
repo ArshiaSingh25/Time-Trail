@@ -3,6 +3,8 @@ import { Navigate, Link } from 'react-router-dom'
 import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../../../firebase/auth'
 import { useAuth } from '../../../contexts/authContext'
 import { storeUserInSql } from '../../../utils/storeUser'
+import portal from '/src/assets/portal.jpeg';
+
 const Login = () => {
     const { userLoggedIn } = useAuth()
 
@@ -44,10 +46,11 @@ const Login = () => {
 
     return (
         <div>
-            {userLoggedIn && (<Navigate to={'/dashboard'} replace={true} />)}
+            {userLoggedIn && (<Navigate to={'/options'} replace={true} />)}
 
-            <main className="w-full h-screen flex  bg-gradient-to-br from-cyan-900 to-black place-content-center place-items-center">
-                <div className="w-96  text-gray-600 space-y-5 p-4 bg-white/10  rounded-xl">
+            <main className="w-full h-screen flex place-content-center place-items-center bg-cover bg-center opacity"
+            style={{ backgroundImage: `url(${portal})` }}>
+                <div className="w-96  text-gray-600 space-y-5 p-4 bg-black/60 rounded-xl">
                     <div className="text-center">
                         <div className="mt-2">
                             <h3 className="text-white text-xl font-semibold sm:text-2xl">Welcome Back</h3>
@@ -120,9 +123,12 @@ const Login = () => {
                         {isSigningIn ? 'Signing In...' : 'Continue with Google'}
                     </button>
                 </div>
+             
             </main>
+           
         </div>
     )
 }
 
 export default Login 
+
