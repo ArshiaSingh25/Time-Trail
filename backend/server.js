@@ -70,7 +70,7 @@ app.get('/users', async (req, res) => {
 });
 
 app.post('/store-user', verifyFirebaseToken, (req, res) => {
-    console.log("📥 /store-user endpoint hit");
+    console.log(" /store-user endpoint hit");
     const { uid, email, name } = req.user;
     const sql = 'INSERT IGNORE INTO users (uid, email, name) VALUES (?, ?, ?)';
     db.query(sql, [uid, email, name || null], (err, result) => {
