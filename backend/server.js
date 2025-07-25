@@ -87,7 +87,7 @@ app.get('/rooms/:room_id/puzzles', async (req, res) => {
     const [roomPuzzles] = await db.query('SELECT puzzle_id FROM room_puzzle WHERE room_id = ?', [room_id]);
     const puzzleIds = roomPuzzles.map(row => row.puzzle_id);
     const [puzzles] = await db.query('SELECT * FROM puzzles WHERE puzzle_id IN (?)', [puzzleIds]);
-    res.json(puzzles); // ONLY send rows ✅
+    res.json(puzzles); // ONLY send rows 
 });
 // Generate new progress ID
 
