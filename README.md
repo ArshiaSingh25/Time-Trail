@@ -1,12 +1,116 @@
-# React + Vite
+Here’s a clean, well-structured **GitHub README-style version** of your project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# ⏳ Time Trail – Full Stack Puzzle Game Platform
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A dynamic, interactive puzzle game platform built with a modern full-stack architecture. *Time Trail* combines engaging gameplay mechanics with robust backend systems to deliver a seamless user experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Overview
+
+Time Trail is a web-based puzzle game application that challenges users through multiple levels of interactive puzzles. It features real-time game state handling, persistent progress tracking, and a structured inventory system.
+
+---
+
+##  Tech Stack
+
+**Frontend**
+
+* React.js
+* CSS / UI Components
+
+**Backend**
+
+* Node.js
+* Express.js
+
+**Database**
+
+* MySQL
+
+**Authentication**
+
+* Firebase Authentication
+
+---
+
+##  Features
+
+*  **Interactive Puzzle Gameplay**
+
+  * 9 unique puzzle types with increasing difficulty
+  * Focus on logic, pattern recognition, and problem-solving
+
+*  **Real-Time Game State Management**
+
+  * Session handling
+  * Life tracking system
+  * Inventory management
+  * Persistent user progress
+
+*  **Secure Authentication**
+
+  * Firebase-based user login and session control
+
+* ⚡ **Optimized Backend**
+
+  * RESTful API architecture
+  * Efficient database queries
+  * Error handling for stability and reliability
+
+---
+
+## System Design Highlights
+
+* Modular frontend structure for scalable UI components
+* Centralized state management for consistent gameplay experience
+* Backend designed for handling concurrent user sessions
+* Optimized database schema for fast reads/writes
+
+---
+
+## Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/time-trail.git
+
+# Navigate into the project
+cd time-trail
+
+# Install dependencies (frontend & backend)
+npm install
+
+# Start development server
+npm start
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file and configure:
+
+```env
+DB_HOST=your_database_host
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+FIREBASE_API_KEY=your_firebase_key
+```
+
+---
+
+## Future Improvements
+
+* Multiplayer mode
+* Leaderboard system
+* Advanced analytics for player behavior
+* Mobile responsiveness improvements
+
+---
+
+---
+
+If you want, I can also make this more **recruiter-focused (resume-ready)** or add **screenshots + demo section**.
