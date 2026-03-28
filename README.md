@@ -52,7 +52,7 @@ Time Trail is a web-based puzzle game application that challenges users through 
 
   * Firebase-based user login and session control
 
-* ⚡ **Optimized Backend**
+*  **Optimized Backend**
 
   * RESTful API architecture
   * Efficient database queries
