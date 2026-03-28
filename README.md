@@ -1,8 +1,6 @@
-Here’s a clean, well-structured **GitHub README-style version** of your project:
 
----
 
-# ⏳ Time Trail – Full Stack Puzzle Game Platform
+#  Time Trail – Full Stack Escape Room Game Platform
 
 A dynamic, interactive puzzle game platform built with a modern full-stack architecture. *Time Trail* combines engaging gameplay mechanics with robust backend systems to deliver a seamless user experience.
 
