@@ -36,28 +36,13 @@ Time Trail is a web-based puzzle game application that challenges users through 
 
 ##  Features
 
-*  **Interactive Puzzle Gameplay**
-
   * 9 unique puzzle types with increasing difficulty
-  * Focus on logic, pattern recognition, and problem-solving
-
-*  **Real-Time Game State Management**
-
   * Session handling
-  * Life tracking system
   * Inventory management
   * Persistent user progress
-
-*  **Secure Authentication**
-
   * Firebase-based user login and session control
-
-*  **Optimized Backend**
-
   * RESTful API architecture
   * Efficient database queries
-  * Error handling for stability and reliability
-
 ---
 
 ## System Design Highlights
@@ -106,9 +91,3 @@ FIREBASE_API_KEY=your_firebase_key
 * Leaderboard system
 * Advanced analytics for player behavior
 * Mobile responsiveness improvements
-
----
-
----
-
-If you want, I can also make this more **recruiter-focused (resume-ready)** or add **screenshots + demo section**.
